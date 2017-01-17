@@ -9,6 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
+    @IBOutlet weak var lblText: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +21,12 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    @IBAction func btnPressed(_ sender: Any) {
+        
+        lblText.text = "Hello World"
     }
 
 
